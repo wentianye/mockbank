@@ -6,3 +6,4 @@ test result
 也可以将BANK的数据类型设为map<string,map<BigInteger,double>>：
 我的基本思路就是把控制台和文档中输入的数据做合法校验，通过后放入ConcurrentHashMap（Bank）中，在bank中根据相同key值做累加，累加之后stream掉为0的数据并遍历输出，在输出判断非USD字段进行转换拼接字符串
 通过线程的sleep实现每分钟输出一次，在累加过程中 给BANK加sync锁来实现线程的安全
+test
